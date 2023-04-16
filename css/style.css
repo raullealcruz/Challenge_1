@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html, body {
+	min-height: 100%;
+	min-width: 100%;
+}
+  body{
+	background: #F3F5FC;
+	font-family: 'Inter', sans-serif;
+}
+
+
+.logo{ 
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 40px;
+top: 40px;
+}
+
+.encriptador{
+	position: absolute;
+width: 600px;
+left: 240px;
+top: 168px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%; 
+ 
+color: #0A3871;
+border: unset;
+border-radius: 10px;
+background: transparent;
+}
+.encriptador::placeholder{
+	color: #0A3871;
+}
+.etiqueta{
+	top: 108px;
+	border: unset;
+}
+
+.blanco{
+	/* Rectangle 1 */
+position: absolute;
+width: 25vw;
+height: 90%;
+right: 2%;
+top: 40px;
+text-align: center;
+
+/* White */
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+
+}
+
+.munieco{
+	margin:80% auto 0 auto; 
+	width: 80%;
+}
+.parrafo_encriptar{
+	margin-bottom:10em;
+}
+
+.frame3{ 
+
+display: flex;
+flex-direction: row; 
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 680px;
+height: 67px;
+left: 240px;
+top: 84vh;
+ 
+}
+.anuncio{
+	display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 350px;
+height: 18px;
+left: 240px;
+top: 79vh;
+	
+font-size: 12px;
+line-height: 150%;
+}
+#encriptar{  
+display: flex;
+flex-direction: row; 
+justify-content: space-around;
+gap: 8px;
+text-align: center;
+
+width: 328px;
+height: 67px;
+ 
+background: #0A3871;
+border-radius: 24px;
+  
+color: white; 
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+#desencriptar{
+	box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+color: #0A3871;
+font-size: 16px;
+}
+
+.notexto{
+	font-size: 24px;
+}
+.parrafo_encriptar{
+	font-size: 16px;
+}
+.tencriptado{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	color: #495057;
+	word-wrap: break-word;
+	box-sizing: border-box;
+	border: unset;
+	background: transparent;
+}
+.azul{
+	background: #0A3871;
+	color: white;
+}
+.copiar{
+	padding: 24px;
+	width: 336px;
+	height: 67px;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+}
+
+#encriptar:hover,  #desencriptar:hover{
+	background: white;
+	color: #0A3871;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+}
+@media screen and (min-width:1440px){
+.munieco{
+	margin:40% auto 0 auto; 
+	width: 80%;
+}
+.blanco{
+	right: 5% !important;
+}
+}
+
+@media screen and (max-width: 768px){
+	.encriptador,.frame3,.blanco{
+		left: unset;
+		right: unset;
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.blanco{
+		width: 90%;
+		height: auto;
+		top: unset;
+		bottom: 0px;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.copiar{
+		width: 100%;
+	}
+	.tencriptado{
+		height: 200px;
+	}
+	.frame3 {
+		top: 45vh;
+		margin-bottom: 30px;
+	}
+	.anuncio {
+		top: 40vh;
+	}
+	.munieco{
+		display: none;
+	}
+}
+@media screen and (max-width: 520px ){
+	.frame3{
+		display: block;
+		width: auto;
+	}
+	.anuncio{
+		width: auto;
+		right: unset;
+		left: unset;
+	}
+	.encriptador{
+		width: 90%;
+	}
+	#encriptar{
+		margin-bottom: 20px;
+	}
+
+}
+
+
