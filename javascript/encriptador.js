@@ -15,11 +15,17 @@ function encriptar_datos(){
         alert('No olvides que es necesario ingresar el texto, para poder utilizar esto');
     }else {
         // remplazar valores a encriptar
-        data = datos.replaceAll("e", "enter")
+        data = datos.replaceAll("á", "a")
+        .replaceAll("é", "e")
+        .replaceAll("í", "i")
+        .replaceAll("ó", "o")
+        .replaceAll("u", "u")
+            .replaceAll("e", "enter")
             .replaceAll("i", "imes")
             .replaceAll("a", "ai")
             .replaceAll("o", "ober")
             .replaceAll("u", "ufat")
+            
         console.log('Encriptados: ' + data)
         // Terminamos de encriptar los caracteres
 
