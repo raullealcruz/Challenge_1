@@ -19,7 +19,7 @@ function encriptar_datos(){
         .replaceAll("é", "e")
         .replaceAll("í", "i")
         .replaceAll("ó", "o")
-        .replaceAll("u", "u")
+        .replaceAll("ú", "u")
             .replaceAll("e", "enter")
             .replaceAll("i", "imes")
             .replaceAll("a", "ai")
