@@ -11,11 +11,16 @@ function encriptar_datos(){
     let datos = document.querySelector('.encriptador').value
     console.log(datos)
 
-    if (datos <= ""){
+    
+    if (datos <= "" ){
         alert('No olvides que es necesario ingresar el texto, para poder utilizar esto');
+    }else if( (/^([ñáéíóú ])/i.test(datos)))
+    {
+        alert('Caracteres desconocidos')
     }else {
         // remplazar valores a encriptar
-        data = datos.replaceAll("á", "a")
+        data = datos.trim().replace(/\s\s+/g, ' ')
+        .replaceAll("á", "a")
         .replaceAll("é", "e")
         .replaceAll("í", "i")
         .replaceAll("ó", "o")
@@ -63,7 +68,11 @@ function desencriptar_datos() {
 
     if (datos <= ""){
         alert('No olvides que es necesario ingresar el texto, para poder utilizar esto');
-    }else{
+    }else if( (/^([ñáéíóú ])/i.test(datos)))
+    {
+        alert('Caracteres desconocidos')
+    }
+    else{
 
     // remplazar valores a encriptar
     data = datos.replaceAll("enter", "e")
